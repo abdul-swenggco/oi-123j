@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>New and Used Car Sales</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="New and Used Car Sales" />
+    <link rel="icon" href="" type="image/x-icon" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62dc22846895ac00191ea9d1&product=inline-share-buttons" async="async"></script>
+
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon-->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="home/css/styles.css" rel="stylesheet" />
+   
+    <style>
+        .bg-header {
+            background-color: rgba(15, 87, 251, 0.6) !important;
+            background-color: rgba(15, 87, 251, 0.6) !important;
+        }
+        
+        .bg-footer {
+            --bs-bg-opacity: 1;
+            background-image: linear-gradient( #0F57FB, #0F57FB) !important;
+        }
+        
+        .header-text-color {
+            color: #ffffff !important;
+        }
+        
+        .footer-text-color {
+            color: #ffffff !important;
+        }
+        
+        .footer-text-color .navbar-brand {
+            color: #ffffff !important;
+        }
+        
+        .navbar-nav .active {
+            border-bottom: solid 1px #ffffff !important;
+        }
+        .top-area {
+            height: 30rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url(banner_image.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+        }
+        
+        .header-transparent-layer {
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .header-transparent-layer .contents {
+            padding: 2rem;
+        }
+        
+        @media (min-width: 801px) {
+            .custom-position {
+                margin: 3rem auto;
+                width: 45%;
+                border-radius: 30px;
+                padding: 0;
+                margin-left: 10%;
+            }
+        }
+        
+        @media (max-width: 800px) {
+            .custom-position {
+                margin: 3rem auto;
+                width: 80%;
+                border-radius: 30px;
+                padding: 0;
+            }
+            .text-start {
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <div class="top-area">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+            <div class="container px-5">
+                <a style="color: inherit; text-decoration: inherit;" href="index.html">
+                    <span class="navbar-brand">
+                        <img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()">
+                    </span>
+                    <span class="navbar-brand header-text-color">aus</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                        <li class="nav-item {{home_active}}">
+                            <a class="nav-link header-text-color" href="index.html">Home</a>
+                        </li>
+                        <div class="nav-item {{service_active}} dropdown">
+                            <button class="header-text-color dropbtn is-mobile">Services</button>
+                            <a class="nav-link header-text-color dropbtn is-desktop" href="services.html">Services</a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content2">
+                                    <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
+                                                                                        href="oil-changes-9.html">Oil Changes
+                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
+                                                                                        href="scheduled-maintenance-and-repairs-9.html">Scheduled Maintenance and Repairs
+                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
+                                                                                        href="new-and-used-car-sales-8.html">New and Used Car Sales
+                                                                                        <span class="border-menu"></span></a></li>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item active">
+                            <a class="nav-link header-text-color" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item {{contact_active}}" style="display: none">
+                            <a class="nav-link header-text-color" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-4 mb-2 mb-lg-0" style="display: none">
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg overflow-hidden custom-position">
+            <div class="header-transparent-layer">
+                <div class="row col-lg-12 align-items-start contents">
+                    <div class="col-lg-12 text-start">
+                        <h1 class="font-weight-light text-white">aus</h1>
+                        <span class="font-weight-light text-white"></span>
+                    </div>
+                    <div class="col-lg-12 text-start mt-5">
+                        <a class="btn btn-primary btn-md mx-1 mt-1" style="display: none" target="_blank" href="tel:">Call Now</a>
+                        <a class="btn btn-primary btn-md mx-1 mt-1" style="display: none" target="_blank" href="mailto:">Email Now</a>
+                        <button id="myBtn" class="btn btn-primary btn-md mx-1 mt-1" style="display: none">Get Directions</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container px-4 px-lg-5">
+        <header class="py-2 border-bottom mb-4" style="display: none">
+            <div class="ql-editor py-4" id="sitewide-header">
+                
+            </div>
+        </header>
+        <div class="row gx-4 gx-lg-5 align-items-center py-lg-5">
+            <!-- Heading Row-->
+            <div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="how-often-should-change-oil-in-car-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">How often should change oil in car?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">Regular oil changes are a necessary maintenance task for your car that should not be overlooked. Oil is like the lifeblood of your engine, providing crucial lubrication that keeps all the components running smoothly. Over time, though, the oil can be......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="how-often-should-change-oil-in-car-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="does-an-oil-change-go-in-the-service-book-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">Does an oil change go in the service book?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">Keeping track of vehicle maintenance is crucial for ensuring the longevity and optimal performance of your vehicle. By documenting every maintenance task and service performed, you can easily keep a record of when it was last done and when it needs t......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="does-an-oil-change-go-in-the-service-book-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="how-much-does-it-cost-to-change-engine-oil-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">How much does it cost to change engine oil?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">The expenses of engine oil changes can vary depending on several factors. One important factor is the type of engine oil being used. Different types of engine oil have different price points, with synthetic oil generally costing more than conventiona......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="how-much-does-it-cost-to-change-engine-oil-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="how-much-should-an-oil-change-cost-sydney-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">How much should an oil change cost Sydney?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">When it comes to getting an oil change in Sydney, understanding the pricing can make all the difference. It is important to have a clear idea of what to expect in terms of cost before you book your appointment. Oil change prices in Sydney can vary de......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="how-much-should-an-oil-change-cost-sydney-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="what-is-the-difference-between-preventive-maintenance-and-scheduled-maintenance-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">What is the difference between preventive maintenance and scheduled maintenance?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">Equipment upkeep is a vital aspect of ensuring optimal performance and longevity. However, there are various approaches to equipment upkeep that industries employ. One such approach is preventive maintenance, which involves regular inspections and se......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="what-is-the-difference-between-preventive-maintenance-and-scheduled-maintenance-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="is-200-000-km-on-a-car-bad-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">Is 200 000 km on a car bad?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">One of the key factors that often sparks the mileage debate is the understanding of how high kilometers on a car can impact its overall performance and longevity. It is commonly believed that higher mileage equates to a vehicle that is worn out and p......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="is-200-000-km-on-a-car-bad-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="what-type-of-maintenance-is-schedule-maintenance-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">What type of maintenance is schedule maintenance?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">Regular maintenance is an essential aspect of ensuring the longevity and optimal performance of any system or equipment. It involves systematically inspecting, cleaning, and servicing various components to prevent breakdowns and extend the lifespan o......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="what-type-of-maintenance-is-schedule-maintenance-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="what-is-the-best-time-to-buy-a-used-car-australia-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">What is the best time to buy a used car Australia?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">Timing is everything when it comes to purchasing a used car in Australia. Many factors can influence the optimal time to make your move, including market trends, seasonal variations, and available inventory. By understanding these variables and stayi......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="what-is-the-best-time-to-buy-a-used-car-australia-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="how-do-i-request-housing-maintenance-in-nsw-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">How do I request housing maintenance in NSW?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">When it comes to reporting housing maintenance issues in NSW, it is important to follow a proper process to ensure that your concerns are addressed in a timely manner. The first step is to identify the problem and assess its severity. It could be any......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="how-do-i-request-housing-maintenance-in-nsw-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="are-used-car-prices-going-down-in-australia-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">Are used car prices going down in Australia?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">The current state of used car prices in Australia is showing a significant increase. The demand for pre-owned vehicles has surged in recent years, leading to an overall rise in prices. This increase can be attributed to various factors, including lim......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="are-used-car-prices-going-down-in-australia-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="what-is-an-example-of-scheduled-maintenance-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">What is an example of scheduled maintenance?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">Scheduled maintenance plays a vital role in maintaining the efficiency and longevity of various systems and equipment. From HVAC systems to automobiles, regular upkeep is essential to ensure smooth operations and prevent costly breakdowns. By followi......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="what-is-an-example-of-scheduled-maintenance-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100 bg-white rounded-4 ">
+                      <a class="undecorated" href="what-is-the-best-website-to-buy-a-car-in-sydney-1.html">
+                        <div class="card-body">
+                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
+                                <span class="text-gray" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
+                                <span class="text-gray" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">What is the best website to buy a car in Sydney?</h2>
+                            </div>
+                            <p class="card-text py-lg-2">If you're in the market for a new or used car in Sydney, online car shopping can be a convenient and time-saving option. With a wide range of vehicle options available at your fingertips, you can easily browse through different makes and models, comp......</p>
+                            <div style="float: right">
+                                <a class="btn btn-primary btn-sm" href="what-is-the-best-website-to-buy-a-car-in-sydney-1.html">
+                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+        </div>
+        <div class="">
+            <div>
+                
+            </div>
+        </div>
+        <div class="pb-5 ql-editor" id="sitewide-footer" style="display:none">
+            
+        </div>
+    </div>
+
+    <!-- Footer-->
+
+    <footer class="py-5 bg-blue text-center footer-text-color bg-footer">
+
+        <div class="container text-white">
+            <div class="row  py-lg-3">
+                <div class="col-md-7">
+                    <table style="text-align: left">
+                        <tr>
+                            <td width="15%">
+                                <h2>
+                                    <a style="color: inherit;text-decoration: auto;" href="index.html"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></a>
+                                </h2>
+                            </td>
+                            <td style="text-align: left" class="footer-text-color">
+                                <h2><a style="color: inherit;text-decoration: auto;" href="index.html">aus</a></h2>
+                            </td>
+                        </tr>
+                        <tr style="display: none">
+                            <td width="15%"><i class="fa fa-map-marker-alt footer-text-color"></i></td>
+                            <td style="text-align: left" class="footer-text-color"></td>
+                        </tr>
+                        <tr style="display: none">
+                            <td width="15%"><i class="fa fa-phone footer-text-color"></i></td>
+                            <td style="text-align: left" class="footer-text-color "></td>
+                        </tr>
+                        <tr style="display: none">
+                            <td width="15%"><i class="fa fa-envelope footer-text-color"></i></td>
+                            <td style="text-align: left" class="footer-text-color"></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+
+                <div class="col-md-4">
+                    <table class="float-start float-md-end" style="margin-left: 40px;">
+                        <tr>
+                            <td style="text-align: left;display: inherit"><a class="text-white footer-text-color" style="text-decoration: none" href="terms.html">Terms of Use</a></td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: left;display: inherit"><a class="text-white footer-text-color" style="text-decoration: none" href="privacy.html">Privacy Policy</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;display: inherit"><a class="text-white footer-text-color" style="text-decoration: none" href="sitemap.html">Sitemap</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;display: none"><a class="text-white footer-text-color" style="text-decoration: none" href="contact.html">Contact Us</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <ul class="mt-3 mb-3" style="display: none">
+            <li class="list-inline-item" style="display: none">
+                <a style="text-decoration: none" class="footer-text-color text-white  mr-3" target="_blank" href=""><i class="fa-2x icon-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item" style="display: none">
+                <a style="text-decoration: none" class="footer-text-color text-white  mr-3" target="_blank" href=""><i class="fa-2x icon-social-twitter"></i></a>
+            </li>
+            <li class="list-inline-item" style="display: none">
+                <a style="text-decoration: none" class=" footer-text-color text-white  mr-3" target="_blank" href=""><i class="fa-2x icon-social-instagram"></i></a>
+            </li>
+            <li class="list-inline-item" style="display: none">
+                <a style="text-decoration: none" class="footer-text-color text-white  mr-3" target="_blank" href=""><i class="fa-2x icon-social-pinterest"></i></a>
+            </li>
+            <li class="list-inline-item" style="display: none">
+                <a style="text-decoration: none" class="footer-text-color text-white  mr-3" target="_blank" href=""><i class="fa-2x icon-social-youtube"></i></a>
+            </li>
+        </ul>
+
+        <div class="text-white">
+            <hr/>
+        </div>
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; aus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; display: none">
+                <iframe src="" frameborder="0" style="border:0; " allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="home/js/scripts.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
